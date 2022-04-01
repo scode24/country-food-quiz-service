@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: country-food-quiz-service
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/FoodDB
+    username: postgres
+    password: Password1$
+  jpa:
+    hibernate:
+      ddl-auto: "create"
+    show-sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    
+server:
+  port: 8090
