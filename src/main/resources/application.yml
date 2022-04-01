@@ -2,9 +2,9 @@ spring:
   application:
     name: country-food-quiz-service
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/FoodDB
-    username: postgres
-    password: Password1$
+    url: jdbc:postgresql://ec2-52-73-155-171.compute-1.amazonaws.com:5432/dbr5e8eie7sfv6
+    username: mxfncxsdyikvvj
+    password: 8fcce6b7f5958cba4b073a98cff75ec29955664c7ec0699f351e742de6b46fb7
   jpa:
     hibernate:
       ddl-auto: "create"
