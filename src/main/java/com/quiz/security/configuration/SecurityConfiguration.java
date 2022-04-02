@@ -49,10 +49,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 		http.authorizeRequests().antMatchers("/admin**").hasAnyAuthority("ADMIN").and().formLogin().and().httpBasic();
 
-		String gPassword = generateRandomString();
-
-		System.out.println("Admin username : admin");
-		System.out.println("Admin password : " + gPassword);
+		String gPassword = "admin"; //Call generateRandomString() to generate random password
+		
 		userRepository.save(new User(1l, "admin", bCryptPasswordEncoder().encode(gPassword), "ADMIN"));
 	}
 
